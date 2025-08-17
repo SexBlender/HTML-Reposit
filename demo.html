@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+  </head>
+  <body>
+    <form action="/test">
+      <input type="hidden" name="hid" value="1" />
+      <!-- file:///D:/test?hid=&email=&password=&birthdate=&color=%23000000 -->
+      <div>
+        <label for="email">Введите email</label>
+        <input
+          type="email"
+          placeholder="Email пользователя"
+          id="email"
+          name="email"
+          value="noemail@gmail.com"
+        />
+      </div>
+      <label for="password">Введите пароль</label>
+      <input
+        type="password"
+        placeholder="Пароль пользователя"
+        id="password"
+        name="password"
+      />
+      <label for="birthdate">Введите дату рождения</label>
+      <input
+        type="date"
+        placeholder="Дата рождения пользователя"
+        id="birthdate"
+        name="birthdate"
+      />
+      <label for="color">Введите цвет</label>
+      <input type="color" id="color" name="color" />
+      <label>
+        <span>Число</span>
+        <input type="number" placeholder="Число" id="number" name="number" />
+      </label>
+      <button type="submit">Кнопка</button>
+      <button type="reset">Кнопка сброс</button>
+      <input type="button" value="Кнопка2" />
+      <input type="submit" value="Кнопка submit" />
+    </form>
+    <button>Кнопка вне формы</button>
+  </body>
+</html>
